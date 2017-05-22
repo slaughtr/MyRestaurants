@@ -26,7 +26,8 @@
         android:text="@string/my_restaurants"
         android:id="@+id/appNameTextView"
         android:textSize="60sp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif" />
 
     <Button
         android:layout_width="match_parent"
