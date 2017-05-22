@@ -12,7 +12,9 @@
         android:layout_height="match_parent"
         app:srcCompat="@drawable/background"
         android:id="@+id/imageView"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +25,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/my_restaurants"
         android:id="@+id/appNameTextView"
-        android:textSize="40sp"
+        android:textSize="60sp"
         android:textStyle="normal|bold" />
 
     <Button
