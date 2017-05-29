@@ -1,4 +1,7 @@
-package com.example.guest.myrestaurant;
+package com.example.guest.myrestaurant.services;
+
+import com.example.guest.myrestaurant.Constants;
+import com.example.guest.myrestaurant.models.Restaurant;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,15 +1,15 @@
-package com.example.guest.myrestaurant;
+package com.example.guest.myrestaurant.ui;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.guest.myrestaurant.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
