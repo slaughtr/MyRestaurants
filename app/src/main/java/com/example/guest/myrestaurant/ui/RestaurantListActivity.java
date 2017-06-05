@@ -25,32 +25,32 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class RestaurantListActivity extends AppCompatActivity {
-  public static final String TAG = RestaurantListActivity.class.getSimpleName();
+//    private SharedPreferences mSharedPreferences;
+//    private String mRecentAddress;
 
-  private SharedPreferences mSharedPreferences;
-  private String mRecentAddress;
+    @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
 
-  @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
-  private RestaurantListAdapter mAdapter;
+    private RestaurantListAdapter mAdapter;
+    public ArrayList<Restaurant> mRestaurants = new ArrayList<>();
 
-  public ArrayList<Restaurant> mRestaurants = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_restaurants);
+        ButterKnife.bind(this);
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_restaurants);
-    ButterKnife.bind(this);
+        Intent intent = getIntent();
+        String location = intent.getStringExtra("location");
 
-    Intent intent = getIntent();
-    String location = intent.getStringExtra("location");
+        getRestaurants(location);
 
-    getRestaurants(location);
+//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        mRecentAddress = mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY, null);
+//
+//        if (mRecentAddress != null) {
+//            getRestaurants(mRecentAddress);
+//        }
 
-      mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-      mRecentAddress = mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY, null);
-      if (mRecentAddress != null) {
-          getRestaurants(mRecentAddress);
-      }
 
   }
 

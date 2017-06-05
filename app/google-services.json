@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "925394225597",
+    "firebase_url": "https://androidreusable.firebaseio.com",
+    "project_id": "androidreusable",
+    "storage_bucket": "androidreusable.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925394225597:android:f248acc6e748662f",
+        "android_client_info": {
+          "package_name": "com.example.guest.myrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925394225597-6e609mhcnm2rcuo230tqhp8f9di56fd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.guest.myrestaurant",
+            "certificate_hash": "d7b27ed0b58a0eaee43afd45ac9bd7c9566fa9ca"
+          }
+        },
+        {
+          "client_id": "925394225597-fphc4tpp3rrsqu7bkmp1vu2dqvdppud8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIQQojJ2tMkumcSX1AlwYhNHcd-eMuZEA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925394225597-fphc4tpp3rrsqu7bkmp1vu2dqvdppud8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
